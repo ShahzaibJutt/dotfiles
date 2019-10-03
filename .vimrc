@@ -11,6 +11,11 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ycm-core/YouCompleteMe'
+Plugin 'vim-airline/vim-airline'
+Plugin 'hzchirs/vim-material'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'ervandew/supertab' 
 
 call vundle#end()  
 
@@ -18,16 +23,6 @@ call vundle#end()
 if (has('termguicolors'))
 	set termguicolors
 endif
-
-call plug#begin('~/.vim/plugged')
-
-Plug 'vim-airline/vim-airline'
-Plug 'hzchirs/vim-material'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'ervandew/supertab'
-
-call plug#end()
 
 "snippets
 " Trigger configuration. Do not use <tab> if you use
