@@ -1,7 +1,9 @@
 # .zshrc
+export PATH=$PATH:/home/shahzaib/.local/bin
 export DISPLAY=localhost:0.0
 export LIBGL_ALWAYS_INDIRECT=Yes
 export PAGER="most"
+alias howdoi="howdoi -c"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
