@@ -1,9 +1,9 @@
-# .zshrc
-export PATH=$PATH:/home/shahzaib/.local/bin
-export DISPLAY=localhost:0.0
-export LIBGL_ALWAYS_INDIRECT=Yes
-export PAGER="most"
-alias howdoi="howdoi -c"
+#silentboot
+[[ $(fgconsole 2>/dev/null) == 1 ]] && exec startx -- vt1 &> /dev/null
+#TERM
+export TERM=konsole
+export LC_ALL="en_US.UTF-8"
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -13,7 +13,7 @@ export ZSH="/home/shahzaib/.oh-my-zsh"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
@@ -74,9 +74,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-autoload -U compinit && compinit
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=247'
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions zsh-completions colorize sudo zsh-256color zsh-dircolors-solarized rand-quote zsh-z)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions sudo zsh-256color z colored-man-pages)
 
 source $ZSH/oh-my-zsh.sh
 

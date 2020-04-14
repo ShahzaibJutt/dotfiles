@@ -1,28 +1,30 @@
+set nocompatible              " be iMproved, required
+
+filetype off                  " required
 
 
+
+" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
-
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-" let Vundle manage Vundle, required
+
+Plugin 'morhetz/gruvbox'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
-"Plugin 'hzchirs/vim-material'
-Plugin 'morhetz/gruvbox'
+
 call vundle#end()  
 
-"colors
-if (has('termguicolors'))
-	set termguicolors
-endif
-"airline powerline
+" colors
+set t_Co=256
+
+" airline symbols
 let g:airline_powerline_fonts = 1
+set encoding=utf8
+
+" tabbar
+let g:airline#extensions#tabline#enabled = 1
 
 " theme
 " gruvbox
 set background=dark
 colorscheme gruvbox
-" Palenight
-"let g:material_style='palenight'
-"colorscheme vim-material
