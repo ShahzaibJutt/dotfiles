@@ -1,8 +1,6 @@
-#silentboot
-[[ $(fgconsole 2>/dev/null) == 1 ]] && exec startx -- vt1 &> /dev/null
 #TERM
 export TERM=konsole
-export LC_ALL="en_US.UTF-8"
+export LC_ALL=en_US.UTF-8
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -74,7 +72,9 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions sudo zsh-256color z colored-man-pages)
+plugins=(git zsh-completions zsh-syntax-highlighting zsh-autosuggestions sudo zsh-256color z colored-man-pages)
+
+autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
 

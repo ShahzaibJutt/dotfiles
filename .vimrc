@@ -2,6 +2,7 @@ set nocompatible              " be iMproved, required
 
 filetype off                  " required
 
+syntax on 		      " Pleasing to eyes
 
 
 " set the runtime path to include Vundle and initialize
