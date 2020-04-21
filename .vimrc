@@ -4,16 +4,13 @@ filetype off                  " required
 
 syntax on 		      " Pleasing to eyes
 
+call plug#begin('~/.vim/plugged')
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+Plug 'morhetz/gruvbox'
+Plug 'VundleVim/Vundle.vim'
+Plug 'vim-airline/vim-airline'
 
-Plugin 'morhetz/gruvbox'
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'vim-airline/vim-airline'
-
-call vundle#end()  
+call plug#end()
 
 " colors
 set t_Co=256
