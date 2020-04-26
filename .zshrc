@@ -1,3 +1,13 @@
+#spaceship_theme
+SPACESHIP_PROMPT_ORDER=(
+      dir           # Current directory section
+      git           # Git section (git_branch + git_status)
+      exec_time     # Execution time
+      line_sep      # Line break
+      char          # Prompt character
+
+)
+
 #TERM
 export TERM=konsole
 export LC_ALL=en_US.UTF-8

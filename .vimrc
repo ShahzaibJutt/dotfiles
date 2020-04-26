@@ -7,20 +7,18 @@ syntax on 		      " Pleasing to eyes
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
-Plug 'VundleVim/Vundle.vim'
-Plug 'vim-airline/vim-airline'
+Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
 " colors
 set t_Co=256
 
-" airline symbols
-let g:airline_powerline_fonts = 1
+" encoding
 set encoding=utf8
 
 " tabbar
-let g:airline#extensions#tabline#enabled = 1
+:set showtabline=2
 
 " theme
 " gruvbox
