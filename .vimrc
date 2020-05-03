@@ -1,3 +1,6 @@
+" italics
+let g:gruvbox_italic=1
+
 set nocompatible              " be iMproved, required
 
 filetype off                  " required
@@ -24,3 +27,6 @@ set encoding=utf8
 " gruvbox
 set background=dark
 colorscheme gruvbox
+
+" paste mode
+set pastetoggle=<F2>
