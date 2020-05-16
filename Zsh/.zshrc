@@ -12,6 +12,7 @@ SPACESHIP_PROMPT_ORDER=(
 export TERM=konsole
 export LC_ALL=en_US.UTF-8
 export PAGER="most"
+export NNN_BMS='m:/run/media/shahzaib/Media;r:/;'
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
