@@ -1,3 +1,6 @@
+#command not found
+source /usr/share/doc/pkgfile/command-not-found.zsh
+
 #spaceship_theme
 SPACESHIP_PROMPT_ORDER=(
       dir           # Current directory section
@@ -9,13 +12,14 @@ SPACESHIP_PROMPT_ORDER=(
 )
 
 #TERM
-export TERM=konsole
+export TERM=st
 export LC_ALL=en_US.UTF-8
-export PAGER="most"
 export NNN_BMS='m:/run/media/shahzaib/Media;r:/;'
+export VISUAL="nvim"
+export EDITOR="$VISUAL"
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$PATH:$HOME/.config/polybar/scripts
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/shahzaib/.oh-my-zsh"
@@ -84,7 +88,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions sudo z)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions sudo z colored-man-pages)
 
 source $ZSH/oh-my-zsh.sh
 

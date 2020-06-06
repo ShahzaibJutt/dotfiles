@@ -1,3 +1,6 @@
+" st script
+autocmd BufWritePost ~/.Xresources !xrdb ~/.Xresources
+
 " autocompleteion
 set wildmode=longest,list,full
 

@@ -1,22 +1,39 @@
 *.font: Fira Code:pixelsize=15:antialias=true:autohint=true;
 *.alpha: 0.9
 
-! Dracula Xresources palette
-*.foreground: #F8F8F2
-*.background: #282A36
-*.color0:     #000000
-*.color8:     #4D4D4D
-*.color1:     #FF5555
-*.color9:     #FF6E67
-*.color2:     #50FA7B
-*.color10:    #5AF78E
-*.color3:     #F1FA8C
-*.color11:    #F4F99D
-*.color4:     #BD93F9
-*.color12:    #CAA9FA
-*.color5:     #FF79C6
-*.color13:    #FF92D0
-*.color6:     #8BE9FD
-*.color14:    #9AEDFE
-*.color7:     #BFBFBF
-*.color15:    #E6E6E6
+! special
+*.foreground:   #d8dee9
+*.background:   #1d1f21
+*.cursorColor:  #d8dee9
+
+! black
+*.color0:       #2d2d2d
+*.color8:       #444444
+
+! red
+*.color1:       #ed0b0b
+*.color9:       #b55454
+
+! green
+*.color2:       #40a62f
+*.color10:      #78a670
+
+! yellow
+*.color3:       #f2e635
+*.color11:      #faf380
+
+! blue
+*.color4:       #3c71ea
+*.color12:      #707fd0
+
+! magenta
+*.color5:       #b30ad0
+*.color13:      #c583d0
+
+! cyan
+*.color6:       #32d0fc
+*.color14:      #8adaf1
+
+! white
+*.color7:       #555555
+*.color15:      #e0e3e7
