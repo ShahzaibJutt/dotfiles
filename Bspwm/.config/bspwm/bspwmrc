@@ -1,18 +1,45 @@
-#! /bin/sh
-~/.fehbg
+###---Autostart---###
+~/.fehbg &
 sxhkd &
+#picom &
+#~/.config/polybar/launch.sh &
+#/usr/lib/polkit-kde-authentication-agent-1 &
+#killall redshift-gtk
+#redshift-gtk &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+###---MONITORS---###
+bspc monitor -d 1 2 3 4 5 6 7 8
 
-bspc config border_width         2
-bspc config window_gap          12
+###---Global Settings---###
+bspc config pointer_modifier shift
+bspc config pointer_action1 move
+bspc config pointer_action2 resize_side
+bspc config pointer_action3 resize_corner
+bspc config click_to_focus none
 
-bspc config split_ratio          0.52
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
+bspc config focus_follows_pointer true
 
-bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
+bspc config normal_border_color	"4c566a"
+bspc config active_border_color	"#1e1e1e"
+bspc config focused_border_color "#406ea5"
+bspc config presel_feedback_color "#5e81ac"
+bspc config urgent_border_color "#dd2727"
+
+###---Monitor And Desktop Settings----###
+
+bspc config top_padding 25
+bspc config bottom_padding 0
+bspc config left_padding 0
+bspc config right_padding 0
+bspc config border_width 2
+bspc config window_gap 5
+
+###---Rules---###
+bspc rule -a vlc state=fullscreen
+bspc rule -a St desktop=^1 follow=on
+bspc rule -a firefox desktop=^2 follow=on
+bspc rule -a code-oss desktop=^3 follow=on
+bspc rule -a nnn desktop=^4
+bspc rule -a vlc desktop=^6 follow=on
+bspc rule -a qBittorrent desktop=^7 follow=on
+# bspc rule -a Zathura state=tiled

@@ -50,7 +50,7 @@ floating_modifier $mod
 bindsym $mod+Return exec st
 bindsym $mod+shift+f exec firefox
 bindsym $mod+shift+b exec --no-startup-id bookmenu -fn JetBrainsMonoMedium-10 -p "Select a bookmark" -b ~/.config/bookmenu/bookmarks -co firefox
-bindsym $mod+shift+s exec --no-startup-id bookmenu -fn JetBrainsMonoMedium-10 -p "Select a config" -b ~/.config/bookmenu/config -co "st -e nvim"
+bindsym $mod+shift+s exec --no-startup-id bookmenu -fn JetBrainsMonoMedium-10 -p "Select a config" -b ~/.config/bookmenu/configs -co "st -e nvim"
 bindsym $mod+shift+h exec betterlockscreen -l dimblur
 
 # kill focused window

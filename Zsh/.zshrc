@@ -18,9 +18,6 @@ export NNN_BMS='m:/run/media/shahzaib/Media;r:/;'
 export VISUAL="nvim"
 export EDITOR="$VISUAL"
 
-# If you come from bash you might have to change your $PATH.
-export PATH=$PATH:$HOME/.config/polybar/scripts
-
 # Path to your oh-my-zsh installation.
 export ZSH="/home/shahzaib/.oh-my-zsh"
 
