@@ -17,7 +17,7 @@ autocmd InsertEnter * norm zz
 autocmd BufWritePre * %s/\s\+$//e
 
 " Save file as sudo when no sudo permissions
-cmap w!! w !sudo tee > /dev/null %
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
 " ignorecase
 set ignorecase

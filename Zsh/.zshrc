@@ -12,9 +12,8 @@ SPACESHIP_PROMPT_ORDER=(
 )
 
 #TERM
-export TERM=st
+export TERM=konsole
 export LC_ALL=en_US.UTF-8
-export NNN_BMS='m:/run/media/shahzaib/Media;r:/;'
 export VISUAL="nvim"
 export EDITOR="$VISUAL"
 
